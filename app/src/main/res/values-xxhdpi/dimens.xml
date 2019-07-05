@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="title">17dp</dimen>
+    <dimen name="rating">15dip</dimen>
+    <dimen name="genre">13dip</dimen>
+    <dimen name="year">12dip</dimen>
+
+    <dimen name="card_view_width">250dp</dimen>
+
+
+    <dimen name="optionsDialogMargin">130dp</dimen>
+
+    <dimen name="spacing_quarter">4dp</dimen>
+    <dimen name="spacing_half">8dp</dimen>
+    <dimen name="spacing_icons">12dp</dimen>
+    <dimen name="spacing_normal">12dp</dimen>
+    <dimen name="spacing_2">28dp</dimen>
+    <dimen name="spacing_3">42dp</dimen>
+    <dimen name="login_logo_size">120dp</dimen>
+
+    <dimen name="splash_marginTop">130dp</dimen>
+    <dimen name="splash_marginLeft">110dp</dimen>
+    <dimen name="splash_icon_size">80dp</dimen>
+    <dimen name="login_kente_background_height">150dp</dimen>
+
+    <dimen name="main_kente_background_height">220dp</dimen>
+    <dimen name="civ_height">50dp</dimen>
+
+    <dimen name="events_item_view_height">240dp</dimen>
+    <dimen name="mini_image_size">30dp</dimen>
+
+
+    <dimen name="login_logo_background_size">100dp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">13sp</dimen>
+    <dimen name="text_size_medium">15sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="no_session_logo_size">180dp</dimen>
+
+    <dimen name="text_size_tiny">11sp</dimen>
+    <dimen name="text_size_title">24sp</dimen>
+    <dimen name="profile_pic_setup_logo_size">80dp</dimen>
+    <dimen name="drawer_header_height">120dp</dimen>
+    <dimen name="drawer_header_textsize">20sp</dimen>
+    <dimen name="drawer_header_text_spacing">@dimen/spacing_normal</dimen>
+
+    <dimen name="player_controls">60dp</dimen>
+    <dimen name="listview_icon_size">40dp</dimen>
+    <dimen name="image_view_size">90dp</dimen>
+
+    <dimen name="imageview_one_height">190dp</dimen>
+    <dimen name="imageview_one_width">140dp</dimen>
+    <dimen name="imageview_two_height">100dp</dimen>
+    <dimen name="splash_imageview_spacing">32dp</dimen>
+    <dimen name="po_caed_imageview_height">90dp</dimen>
+
+    <dimen name="cylinder_image_size">140dp</dimen>
+
+    <dimen name="image_size_small">60dp</dimen>
+
+
+
+</resources>

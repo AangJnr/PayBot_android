@@ -1,0 +1,193 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        paybot {
+            storePassword 'sirrius'
+            keyAlias = 'paybot'
+            keyPassword 'sirrius'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId rootProject.ext.applicationId
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        flavorDimensions "default"
+    }
+
+
+    signingConfigs {
+        release {
+            storeFile file("/Users/aangjnr/Documents/AppsDev/Keys/paybot")
+            storePassword "sirrius"
+            keyAlias "paybot"
+            keyPassword "sirrius"
+        }
+    }
+
+
+    buildTypes {
+          release {
+              shrinkResources false
+              minifyEnabled false
+              useProguard false
+              debuggable true
+              proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+              signingConfig signingConfigs.release
+              buildConfigField("String", "END_POINT", "\"\"")
+
+          }
+
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+            initWith release
+            shrinkResources false
+            minifyEnabled false
+            debuggable true
+            useProguard false
+         }
+    }
+
+
+
+
+
+    lintOptions {
+        checkReleaseBuilds true
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    allprojects {
+        repositories {
+            maven { url 'https://jitpack.io' }
+
+            jcenter()
+
+            maven { url "https://maven.google.com" }
+        }
+    }
+
+
+
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+
+
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.appcompat:appcompat:$rootProject.ext.supportLibraryVersion"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation "com.google.android.material:material:1.0.0-rc01"
+    implementation "androidx.cardview:cardview:$rootProject.ext.supportLibraryVersion"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.supportLibraryVersion"
+    implementation "androidx.vectordrawable:vectordrawable:$rootProject.supportLibraryVersion"
+    implementation "androidx.vectordrawable:vectordrawable-animated:$rootProject.supportLibraryVersion"
+    implementation "androidx.preference:preference:$rootProject.supportLibraryVersion"
+
+    implementation("com.squareup.retrofit2:retrofit:$rootProject.ext.retrofitVersion") {
+        exclude module: 'okhttp'
+    }
+
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-scalars:$rootProject.ext.retrofitVersion"
+
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.loggingInterceptorVersion"
+
+    //ReactiveX
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxandroidVersion"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjava2Version"
+
+    //Serialization
+    implementation "com.squareup.moshi:moshi:$rootProject.ext.moshiVersion"
+
+
+    // room database
+    implementation "androidx.room:room-rxjava2:$rootProject.ext.roomVersion"
+    implementation "androidx.room:room-runtime:$rootProject.ext.roomVersion"
+    annotationProcessor "androidx.room:room-compiler:$rootProject.ext.roomVersion"
+
+
+    // dagger dependency injection
+    implementation "com.google.dagger:dagger:$rootProject.ext.dagger2Version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.ext.dagger2Version"
+    implementation "com.google.dagger:dagger-android-support:$rootProject.ext.dagger2Version"
+
+    // compileOnly 'javax.annotation:jsr250-api:1.0'
+    //implementation 'javax.inject:javax.inject:1'
+
+    // butterknife code generator for view
+    implementation "com.jakewharton:butterknife:$rootProject.ext.butterKnifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterKnifeVersion"
+
+
+    //Circle imageView
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+
+    //if you want to use Picasso for loading images
+    implementation 'agency.tango.android:avatar-view-picasso:0.0.2'
+
+
+    // logger
+    implementation "com.jakewharton.timber:timber:$rootProject.ext.timberVersion"
+    implementation "com.balsikandar.android:crashreporter:$rootProject.ext.crashReporterVersion"
+
+
+    //Permissions
+    implementation "com.github.karanchuri:PermissionManager:$rootProject.ext.permissionManager"
+    implementation 'com.android.support:exifinterface:28.0.0'
+
+
+    implementation 'com.github.ozodrukh:CircularReveal:2.0.1@aar'
+    implementation 'com.flaviofaria:kenburnsview:1.0.7'
+
+    implementation 'agency.tango.android:avatar-view:0.0.2'
+    implementation 'com.romellfudi.ussdlibrary:ussd-library:1.1.i'
+
+
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+
+
+    implementation('com.lamudi.phonefield:phone-field:0.1.3@aar') {
+        transitive = true
+    }
+
+
+}

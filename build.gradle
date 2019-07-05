@@ -1,0 +1,100 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            name 'Sonatype SNAPSHOTs'
+            url 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
+
+        maven { url "https://jitpack.io" }
+
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+
+
+ext {
+    // Sdk and tools
+    // Support library and architecture components support minSdk 14 and above.
+    applicationId = "indie.aang.paybot"
+    versionName = "1.0"
+    minSdkVersion = 19
+    targetSdkVersion = 28
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.0'
+
+    mapsVersion = '16.1.0'
+
+    // App dependencies
+    supportLibraryVersion = '1.0.0'
+    guavaVersion = '18.0'
+
+    junitVersion = '4.12'
+    runnerVersion = '1.0.2'
+    espressoVersion = '3.0.2'
+    roomVersion = "2.1.0-rc01"
+    gsonVersion = "2.8.5"
+    playServicesVersion = "15.0.0"
+    firebaseVersion = "16.0.5"
+    crashyticsVersion = "2.9.6"
+    volleyVersion = "1.1.1"
+
+    rhinoVersion = "1.0"
+
+    calligraphyVersion = '2.2.0'
+    glideVersion = '3.7.0'
+
+    rx2FastAndroidNetworking = '1.0.1'
+
+    dagger2Version = '2.11'
+
+    rxjava2Version = '2.1.10'
+    rxandroidVersion = '2.0.1'
+    butterKnifeVersion = '10.1.0'
+    greenDaoVersion = '3.2.0'
+    placeholderviewVersion = '0.6.1'
+    debugDBVersion = '1.0.3'
+    timberVersion = '4.7.1'
+
+    smartTabVersion = '1.6.1@aar'
+
+    //Test dependencies
+    mockitoVersion = '2.7.1'
+
+    crashReporterVersion = '1.0.9'
+
+    permissionManager = '0.1.0'
+
+    materialSearchDialogVersion = '1.2.3'
+    moshiVersion = "1.8.0"
+    retrofitVersion = "2.5.0"
+    apacheCommonsVersion = "3.6"
+
+    loggingInterceptorVersion = '3.9.1'
+
+
+
+}

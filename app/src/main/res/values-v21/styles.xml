@@ -1,0 +1,84 @@
+<resources>
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+        <item name="android:buttonStyle">@style/PrimaryButtonAccent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+    </style>
+
+
+
+
+    <style name="MapTheme" parent="AppTheme">
+         <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+
+    </style>
+
+    <style name="AppPreferenceFragmentCompatStyle" parent="@style/PreferenceFragment.Material">
+
+
+    </style>
+
+
+    <style name="StyledTilEditTextFloatingLabel" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#c2ededed</item>
+    </style>
+
+    <style name="StyledTilEditTextLayout">
+        <item name="android:textColorHint">#c2ededed</item>
+    </style>
+
+
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    </style>
+
+    <style name="LoginTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+
+    <style name="DatePickerSpinner" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColorPrimary">@android:color/primary_text_light</item>
+        <item name="android:colorControlNormal">@color/colorAccent</item>
+        <item name="android:colorAccent">?attr/colorAccent</item>
+
+
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+
+
+
+</resources>

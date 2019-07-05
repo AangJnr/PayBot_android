@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@color/colorPrimary"/>
+
+    <item>
+        <bitmap
+            android:gravity="center"
+            
+            android:src="@drawable/logo_no_background_x2"/>
+    </item>
+
+</layer-list>

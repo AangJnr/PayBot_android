@@ -1,0 +1,111 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="tab_height_large">72dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="edit_text_layout_margin_left">48dp</dimen>
+    <dimen name="login_edittext_fields">320dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_press_elevation">4dp</dimen>
+
+    <dimen name="title">17dp</dimen>
+    <dimen name="rating">15dip</dimen>
+    <dimen name="genre">13dip</dimen>
+    <dimen name="year">12dip</dimen>
+    <dimen name="card_view_width">250dp</dimen>
+    <dimen name="optionsDialogMargin">130dp</dimen>
+    <dimen name="spacing_quarter">4dp</dimen>
+    <dimen name="spacing_half">8dp</dimen>
+    <dimen name="spacing_icons">12dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="spacing_2">32dp</dimen>
+    <dimen name="spacing_3">64dp</dimen>
+    <dimen name="login_logo_size">120dp</dimen>
+    <dimen name="icon_size">50dp</dimen>
+    <dimen name="splash_marginTop">130dp</dimen>
+    <dimen name="splash_marginLeft">110dp</dimen>
+    <dimen name="splash_icon_size">80dp</dimen>
+    <dimen name="login_kente_background_height">150dp</dimen>
+
+    <dimen name="main_kente_background_height">220dp</dimen>
+    <dimen name="civ_height">70dp</dimen>
+    <dimen name="toolbar_size">56dp</dimen>
+
+    <dimen name="events_item_view_height">260dp</dimen>
+    <dimen name="mini_image_size">32dp</dimen>
+
+    <dimen name="job_item_view_height">280dp</dimen>
+
+    <dimen name="login_logo_background_size">100dp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="no_session_logo_size">180dp</dimen>
+
+    <dimen name="text_size_tiny">11sp</dimen>
+    <dimen name="text_size_title">24sp</dimen>
+    <dimen name="profile_pic_setup_logo_size">80dp</dimen>
+    <dimen name="drawer_header_height">230dp</dimen>
+    <dimen name="drawer_header_textsize">20sp</dimen>
+    <dimen name="drawer_header_text_spacing">@dimen/spacing_normal</dimen>
+
+    <dimen name="player_controls">60dp</dimen>
+
+    <dimen name="visa_margin">0dp</dimen>
+
+    <dimen name="listview_icon_size">40dp</dimen>
+    <dimen name="image_view_size">80dp</dimen>
+
+    <dimen name="layout_bounds_height">100dp</dimen>
+    <dimen name="selectors_icon_size">50dp</dimen>
+
+
+    <dimen name="mini_image_width">80dp</dimen>
+    <dimen name="mini_image_height">@dimen/layout_bounds_height</dimen>
+    <dimen name="imageview_one_height">170dp</dimen>
+    <dimen name="imageview_one_width">110dp</dimen>
+    <dimen name="imageview_two_height">90dp</dimen>
+    <dimen name="splash_imageview_spacing">64dp</dimen>
+    <dimen name="po_caed_imageview_height">70dp</dimen>
+
+    <dimen name="text_size_19sp">19sp</dimen>
+
+    <dimen name="cylinder_image_size">140dp</dimen>
+    <dimen name="image_size_small">70dp</dimen>
+
+
+    <dimen name="cell_height">50dp</dimen>
+    <dimen name="row_header_width">55dp</dimen>
+    <dimen name="text_size">12sp</dimen>
+
+    <!-- Material Design TableView dimensions -->
+    <dimen name="md_cell_height">40dp</dimen>
+    <dimen name="md_cell_text_size">13sp</dimen>
+    <dimen name="md_column_header_text_size">13sp</dimen>
+    <dimen name="md_column_header_gap_size">28dp</dimen>
+
+
+    <!-- Overriding the default values of the tableView -->
+    <dimen name="default_row_header_width">55dp</dimen>
+    <dimen name="default_column_header_height">40dp</dimen>
+
+
+    <dimen name="sections_image_size">60dp</dimen>
+    <dimen name="sub_sections_image_size">30dp</dimen>
+    <dimen name="topics_image_size">20dp</dimen>
+    <dimen name="alert_def_padding">16dp</dimen>
+
+
+</resources>
